@@ -1,0 +1,15 @@
+{
+  "name": "Nome do cliente",
+  "colors": { "dark": "#1b2430", "accent": "#c9a86a", "light": "#e8d9b8", "text": "#ffffff", "endBg": "#ffffff" },
+  "font": {
+    "family": "Montserrat",
+    "files": [
+      { "file": "fonts/montserrat-latin-300-normal.woff2", "weight": "300" },
+      { "file": "fonts/montserrat-latin-400-normal.woff2", "weight": "400" },
+      { "file": "fonts/montserrat-latin-500-normal.woff2", "weight": "500" },
+      { "file": "fonts/montserrat-latin-300-italic.woff2", "weight": "300", "style": "italic" }
+    ]
+  },
+  "logo": "logo.png",
+  "handle": "@perfil"
+}
