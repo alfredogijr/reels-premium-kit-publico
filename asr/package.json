@@ -1,0 +1,11 @@
+{
+  "name": "reels-asr",
+  "private": true,
+  "type": "module",
+  "description": "Transcrição local em português (Whisper small, ONNX). Instale com: npm i --ignore-scripts",
+  "dependencies": {
+    "@huggingface/transformers": "^3.0.0",
+    "sts-whisper-small": "1.0.0",
+    "wavefile": "^11.0.0"
+  }
+}
