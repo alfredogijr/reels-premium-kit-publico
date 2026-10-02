@@ -1,0 +1,25 @@
+{
+  "name": "reels-premium-kit",
+  "version": "1.0.0",
+  "description": "Kit de edição de reels 9:16 em padrão premium (Remotion), orientado a dados: cada reel é um arquivo JSON.",
+  "private": true,
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@remotion/cli": "4.0.528",
+    "@remotion/fonts": "4.0.528",
+    "@remotion/media": "4.0.528",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "remotion": "4.0.528",
+    "@fontsource/montserrat": "^5.3.0"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.7",
+    "typescript": "5.9.3"
+  },
+  "scripts": {
+    "studio": "remotion studio",
+    "check": "tsc --noEmit",
+    "setup": "bash tools/setup.sh"
+  }
+}

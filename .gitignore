@@ -1,0 +1,15 @@
+node_modules/
+out/
+media/*
+!media/.gitkeep
+transcripts/*
+!transcripts/.gitkeep
+public/media/
+public/clients/
+src/generated/*.json
+asr/node_modules/
+*.log
+public/fonts/*.woff2
+public/sfx/*.wav
+clients/*/logo.*
+package-lock.json
