@@ -1,0 +1,56 @@
+{
+  "id": "exemplo",
+  "titulo": "Exemplo de reel (modelo)",
+  "publico": "institucional",
+  "sources": {
+    "fala": { "file": "media/fala.mp4", "audio": "media/fala.wav", "words": "transcripts/fala.json" },
+    "apoio": { "file": "media/apoio.mp4", "audio": "media/apoio.wav", "words": "transcripts/apoio.json" }
+  },
+  "clips": [
+    ["fala", 2.0, 6.5, "gancho"],
+    ["fala", 8.0, 14.2, "contexto"],
+    ["apoio", 3.1, 11.8, "bastidor"],
+    ["fala", 20.4, 31.0, "numero"],
+    ["fala", 33.5, 44.0, "virada"],
+    ["apoio", 15.0, 22.6, "uniao"],
+    ["fala", 50.2, 54.9, "fechamento", { "fadeOut": 0.4 }]
+  ],
+  "replace": [
+    ["nome da marka", "Nome da Marca"],
+    ["fulano de tal", "Fulano de Tal"]
+  ],
+  "words": { "palavraErrada": "palavra certa", "né": "" },
+  "drop": [{ "src": "apoio", "t": 9.4 }],
+  "timings": [{ "src": "fala", "s": 54.1, "e": 54.6, "text": "juntos." }],
+  "capitalize": [1, 3, 4],
+  "endSentence": ["gancho", "numero", "fechamento"],
+  "keywords": ["Nome da Marca", "2026", "100", "parceria"],
+  "captionsFrom": { "clip": 1, "offset": -4 },
+  "segments": [
+    { "at": 0, "mode": "full", "cx": 0.5, "cy": 0.38, "zoom": [1.4, 1.1], "easeOut": true },
+    { "at": { "clip": 1 }, "mode": "full", "cx": 0.45, "cy": 0.36, "zoom": [1.2, 1.28] },
+    { "at": { "clip": 2 }, "mode": "wide", "cx": 0.5, "cy": 0.5, "zoom": [1.0, 1.05] },
+    { "at": { "clip": 3 }, "mode": "split", "cx": 0.5, "cy": 0.45, "zoom": [1.12, 1.16] },
+    { "at": { "clip": 6 }, "mode": "full", "cx": 0.5, "cy": 0.4, "zoom": [1.02, 1.1] }
+  ],
+  "panels": [
+    { "from": { "clip": 3 }, "to": { "clip": 4 }, "type": "counter",
+      "props": { "eyebrow": "Em números", "prefix": "+", "value": 100, "numAt": { "src": "fala", "t": 24.0 }, "label": "clientes *atendidos*",
+                 "note": "Uma frase curta\nque o porta-voz disse", "noteAt": { "src": "fala", "t": 28.0 } } },
+    { "from": { "clip": 4 }, "to": { "clip": 5 }, "type": "strike",
+      "props": { "eyebrow": "A virada", "title": "O que mudou", "old": "antes", "next": "agora",
+                 "strikeAt": { "src": "fala", "t": 38.0, "offset": 6 }, "revealAt": { "src": "fala", "t": 40.0 } } },
+    { "from": { "clip": 5 }, "to": { "clip": 6 }, "type": "stack",
+      "props": { "eyebrow": "Juntos", "items": [
+                   { "label": "Marca A", "at": { "src": "apoio", "t": 16.0 } },
+                   { "label": "Marca B", "at": { "src": "apoio", "t": 18.0 } },
+                   { "label": "Nome da Marca", "at": { "src": "apoio", "t": 20.0 }, "italic": true } ] } }
+  ],
+  "overlays": [
+    { "from": 0, "to": { "clip": 1 }, "type": "hook", "props": { "eyebrow": "Rótulo do gancho", "title": "A frase mais forte\n*logo no primeiro frame.*" } },
+    { "from": { "src": "fala", "t": 9.0 }, "to": { "clip": 2 }, "type": "lowerThird", "props": { "name": "Nome do Porta-voz", "role": "Cargo confirmado" } },
+    { "from": { "clip": 2 }, "to": { "clip": 3 }, "type": "wideTitle", "props": { "eyebrow": "Bastidores", "text": "Um título *curto.*" } },
+    { "from": { "clip": 6 }, "to": { "end": true }, "type": "logo" }
+  ],
+  "end": { "tagline": "Uma frase de assinatura.", "duration": 120 }
+}
